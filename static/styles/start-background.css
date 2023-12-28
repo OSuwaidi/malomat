@@ -1,0 +1,43 @@
+
+.start-background {
+    margin: 0;
+    padding-top: 70px;
+    position: relative;
+    background: linear-gradient(135deg, #009688, #4db6ac);
+    min-height: 100vh;
+    width:100%;
+    z-index: -1;
+}
+
+.letter {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.start-background h1 {
+    font-size: 17rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 5%;
+    overflow: hidden; /* Ensures that hidden letters don't take up space */
+}
+
+#word1 {
+    text-align: left;
+    margin-left: 7rem;
+    font-weight: bold; /* Optional: makes the text thicker */
+    background: linear-gradient(to right, white, #1a4f7a, #ff8a71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Makes the text color transparent so the gradient shows */
+}
+
+#word2 {
+    text-align: right;
+    margin-right: 7rem;
+    font-weight: bold; /* Optional: makes the text thicker */
+    background: linear-gradient(to right, white, #1a4f7a, #ff8a71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

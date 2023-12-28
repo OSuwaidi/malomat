@@ -1,0 +1,94 @@
+.middle-background {
+    position: relative;
+    background-color: rgb(249, 247, 247);
+    color: #4db6ac;
+    padding: 50px 0;
+    overflow: hidden;
+    width: 100%;
+    border-top: 0.5em solid #4682B4; /* Modern pastel navy color */
+    border-bottom: 0.5em solid #4682B4; /* Modern pastel navy color */
+}
+
+.middle-background p {
+    position: relative;
+    color: #1a4f7a;
+    font-size: 20px;
+    margin-left: 13%;
+    width: 30%;
+    white-space: pre-line;
+}
+
+.middle-background h1 {
+    width: 50%;
+    font-size: 50px;
+    position: relative;
+    z-index: 5;
+    color: transparent;
+    background: linear-gradient(0deg, #BF5748 0%, #006B6B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-left: 7%;
+    white-space: pre-line;
+}
+
+.highlight {
+    position: relative;
+    font-size: 35px;
+    font-weight: bold; /* Makes the text bold */
+    color: #BF5748; /* Salmon color for a striking look */
+    z-index: 5;
+    margin: 2% 0;
+}
+
+.sub_container {
+}
+
+.sub_container div {
+    width: 50%;
+    margin-bottom: 5%;
+    background-color: #f0f0f0; /* Light background */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px; /* Adjustable width */
+    opacity: 0.95;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub_container div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sub_container div::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(48, 213, 200, 0.7), rgba(255, 138, 113, 0.7));
+    z-index: -1;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+}
+
+.sub_container div:hover::before {
+    transform: rotate(60deg);
+}
+
+.sub_text {
+    position: relative;
+    font-size: 23px;
+    color: #006B6B;
+    margin: 0;
+    z-index: 5;
+}
+
+.emphasis {
+    color: #ff8a71; /* Turquoise color */
+    font-weight: bold;
+    font-style: italic;
+}

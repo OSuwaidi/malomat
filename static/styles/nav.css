@@ -1,0 +1,48 @@
+
+.ai-navbar {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 150, 136, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+.ai-navbar img {
+    float: left;
+    height: 70px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+}
+
+.ai-navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Vertically centers the content */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 4%;
+    margin-top: 25px;
+}
+
+.ai-navbar ul li {
+    padding: 0;
+    margin: 0 1.5%;
+}
+
+.ai-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.ai-navbar a:hover {
+    color: #ff8a71;
+}
+

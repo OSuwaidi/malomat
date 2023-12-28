@@ -1,0 +1,40 @@
+.circle, .semi-circle, .oval {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+    width: 8vw; /* Smaller responsive size */
+    height: 8vw; /* Smaller responsive size */
+    animation: rotate 5s linear infinite;
+    background-image: linear-gradient(to right, #1a4f7a, #30d5c8);
+}
+
+.semi-circle {
+    width: 12vw; /* Smaller size */
+    height: 6vw; /* Half of width for semi-circle, also smaller */
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.1);
+    }
+    background-image: linear-gradient(to right, #30d5c8, #ff8a71);
+}
+
+.oval {
+    width: 10vw; /* Smaller width */
+    height: 7vw; /* Smaller height */
+    background-image: linear-gradient(to right, #ff8a71, #1a4f7a); /* Modern gradient */
+    mix-blend-mode: multiply;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

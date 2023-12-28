@@ -1,0 +1,66 @@
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 5s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+.shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background-color: #80cbc4;
+    top: 10%;
+    left: 5%;
+    animation-duration: 7s;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #4dd0e1;
+    bottom: 20%;
+    right: 10%;
+    animation-duration: 6s;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #26c6da;
+    top: 30%;
+    right: 30%;
+    animation-duration: 8s;
+}
+
+.shape-4 {
+    width: 100px;
+    height: 100px;
+    background-color: #00695c;
+    bottom: 15%;
+    left: 40%;
+    animation-duration: 5s;
+}
+
+.shape-5 {
+    width: 180px;
+    height: 180px;
+    background-color: #00796b;
+    top: 50%;
+    right: 10%;
+    animation-duration: 10s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(30deg);
+    }
+}

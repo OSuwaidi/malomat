@@ -1,0 +1,23 @@
+
+{% set x_l = -5 %}
+{% set x_r = 98 %}
+{% set y_l = -5 %}
+{% set y_r = 98 %}
+{% for i in range(2) %}
+<div class="circle" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%"></div>
+<div class="circle" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%"></div>
+<div class="circle" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%"></div>
+
+<div class="semi-circle" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%
+                                        ;transform: rotate({{ random(range(-90, 90)) }}deg); "></div>
+<div class="semi-circle" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%
+                                        ;transform: rotate({{ random(range(-90, 90)) }}deg); "></div>
+<div class="semi-circle" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%
+                                        ;transform: rotate({{ random(range(-90, 90)) }}deg); "></div>
+<div class="oval" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%
+                                        ;transform: rotate({{ random(range(-90, 90)) }}deg); "></div>
+<div class="oval" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%
+                                        ;transform: rotate({{ random(range(-90, 90)) }}deg); "></div>
+<div class="oval" style="top: {{ random(range(y_l, y_r)) }}%; left: {{ random(range(x_l, x_r)) }}%
+                                        ;transform: rotate({{ random(range(-90, 90)) }}deg); "></div>
+{% endfor %}

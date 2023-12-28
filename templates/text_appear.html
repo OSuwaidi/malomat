@@ -1,0 +1,27 @@
+
+<script>
+function typeEffect(element, word, delay = 300) {
+let letters = word.split("");
+let i = 0;
+
+letters.forEach((letter, index) => {
+    let letterElement = document.createElement('span');
+    letterElement.classList.add('letter');
+    letterElement.style.transitionDelay = `${index * delay}ms`;
+    letterElement.innerHTML = letter;
+    element.appendChild(letterElement);
+});
+
+setTimeout(() => {
+    let children = element.childNodes;
+    children.forEach(child => {
+        child.style.opacity = 1;
+    });
+}, delay);
+}
+
+window.onload = function() {
+typeEffect(document.getElementById('word1'), 'Malomat');
+typeEffect(document.getElementById('word2'), 'معلومات');
+};
+</script>

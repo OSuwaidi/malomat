@@ -1,0 +1,16 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the full height of the page is covered */
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    color: rgb(249, 247, 247);
+}
+
+body {
+    background-color: rgb(249, 247, 247);
+}
+
+i {vertical-align: middle}
+
