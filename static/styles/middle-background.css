@@ -9,15 +9,6 @@
     border-bottom: 0.5em solid #4682B4; /* Modern pastel navy color */
 }
 
-.middle-background p {
-    position: relative;
-    color: #1a4f7a;
-    font-size: 20px;
-    margin-left: 13%;
-    width: 30%;
-    white-space: pre-line;
-}
-
 .middle-background h1 {
     width: 50%;
     font-size: 50px;
@@ -31,6 +22,46 @@
     white-space: pre-line;
 }
 
+.modern-button {
+    background-color: #FF8C69; /* Salmon color */
+    position: relative;
+    top: 300px;
+    right: 300px;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 30px; /* Bubbly rounded corners */
+    text-align: center;
+    font-size: 45px;
+    min-width: 250px
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.modern-button:hover {
+    background-color: #40E0D0; /* Turquoise color on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Optional: focus effect for accessibility */
+.modern-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #000080; /* Navy color outline */
+}
+
+.headline p {
+    margin-top: -3%;
+    position: relative;
+    color: #1a4f7a;
+    font-size: 24px;
+    margin-left: 13%;
+    width: 30%;
+    white-space: pre-line;
+}
+
 .highlight {
     position: relative;
     font-size: 35px;
@@ -40,29 +71,26 @@
     margin: 2% 0;
 }
 
-.sub_container {
-}
-
-.sub_container div {
-    width: 50%;
-    margin-bottom: 5%;
+.content_box {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 5% 0;
     background-color: #f0f0f0; /* Light background */
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 800px; /* Adjustable width */
     opacity: 0.95;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.sub_container div:hover {
+.content_box:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.sub_container div::before {
+.content_box::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -75,16 +103,30 @@
     border-radius: 15px;
 }
 
-.sub_container div:hover::before {
+.content_box:hover::before {
     transform: rotate(60deg);
+}
+
+.content_box img {
+    width: 20%;
+    margin-left: 13%;
+}
+
+.content_pair {
+    display: flex;
+    flex-direction: column; /* This stacks children vertically */
+    align-items: center; /* This centers them horizontally */
+    justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
+    margin-right: 5%;
 }
 
 .sub_text {
     position: relative;
-    font-size: 23px;
+    font-size: 22px;
     color: #006B6B;
     margin: 0;
     z-index: 5;
+    width: 85%;
 }
 
 .emphasis {

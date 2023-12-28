@@ -6,8 +6,10 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 0;
+    z-index: 10; /* Ensure it's above other elements */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
+
 
 .ai-navbar img {
     float: left;
@@ -15,7 +17,7 @@
     width: auto;
     margin: 0;
     padding: 0;
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 .ai-navbar ul {
@@ -25,7 +27,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 4%;
+    margin-right: 7%;
     margin-top: 25px;
 }
 

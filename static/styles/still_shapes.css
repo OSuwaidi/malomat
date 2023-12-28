@@ -7,34 +7,54 @@
 }
 
 .circle {
-    width: 8vw; /* Smaller responsive size */
-    height: 8vw; /* Smaller responsive size */
-    animation: rotate 5s linear infinite;
+    width: 8vw;
+    height: 8vw;
+    animation: rotate 5s linear infinite, pulse 2s infinite alternate;
     background-image: linear-gradient(to right, #1a4f7a, #30d5c8);
 }
 
+.circle:hover {
+    animation-speed: 3s;
+}
+
 .semi-circle {
-    width: 12vw; /* Smaller size */
-    height: 6vw; /* Half of width for semi-circle, also smaller */
+    width: 12vw;
+    height: 6vw;
     overflow: hidden;
-    &:hover {
-        transform: scale(1.1);
-    }
     background-image: linear-gradient(to right, #30d5c8, #ff8a71);
+    animation: swing 4s ease-in-out infinite;
+}
+
+.semi-circle:hover {
+    transform: scale(1.2);
 }
 
 .oval {
-    width: 10vw; /* Smaller width */
-    height: 7vw; /* Smaller height */
-    background-image: linear-gradient(to right, #ff8a71, #1a4f7a); /* Modern gradient */
+    width: 10vw;
+    height: 7vw;
+    background-image: linear-gradient(to right, #ff8a71, #1a4f7a);
     mix-blend-mode: multiply;
+    animation: float 6s ease-in-out infinite;
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }

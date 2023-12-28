@@ -25,12 +25,15 @@
 #word1 {
     text-align: left;
     margin-left: 7rem;
-    font-weight: bold; /* Optional: makes the text thicker */
+    font-weight: bold;
     background: linear-gradient(to right, white, #1a4f7a, #ff8a71);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Makes the text color transparent so the gradient shows */
+    color: transparent;
+    animation: pulsate 10s ease-in-out infinite;
+    background-size: 200% 100%;
 }
+
 
 #word2 {
     text-align: right;
@@ -40,4 +43,15 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation: pulsate 10s ease-in-out infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        background-position: 35% 0;
+    }
+    50% {
+        background-position: 95% 0;
+    }
 }
