@@ -25,4 +25,9 @@ def about():
     return render_template("ABOUT.html")
 
 
+@app.get('/contact')
+def contact():
+    return "contact us"
+
+
 app.run(debug=True)
