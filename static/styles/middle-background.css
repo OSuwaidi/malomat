@@ -24,9 +24,6 @@
 
 .modern-button {
     background-color: #FF8C69; /* Salmon color */
-    position: relative;
-    top: 300px;
-    right: 300px;
     color: white;
     padding: 20px 20px;
     border: none;
@@ -38,6 +35,8 @@
     cursor: pointer;
     transition: all 0.5s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: absolute;
+    top: 11em;
 }
 
 .modern-button:hover {
@@ -133,4 +132,11 @@
     color: #ff8a71; /* Turquoise color */
     font-weight: bold;
     font-style: italic;
+}
+
+#image_button {
+    display: flex;
+    flex-direction: column; /* This stacks children vertically */
+    align-items: center; /* This centers them horizontally */
+    justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
 }
