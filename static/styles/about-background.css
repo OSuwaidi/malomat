@@ -1,0 +1,15 @@
+
+.about-background {
+    margin: 0;
+    padding-top: 70px;
+    position: relative;
+    background: linear-gradient(135deg, #009688, white);
+    min-height: 100vh;
+    width:100%;
+    z-index: -1;
+}
+
+.about-background p {
+    width: 70%;
+}
+
