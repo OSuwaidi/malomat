@@ -10,8 +10,8 @@
 }
 
 .middle-background h1 {
-    width: 50%;
-    font-size: 50px;
+    width: 55%;
+    font-size: 52px;
     position: relative;
     z-index: 5;
     color: transparent;
@@ -21,7 +21,32 @@
     white-space: pre-line;
 }
 
-.modern-button {
+.headline {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* This centers them horizontally */
+    justify-content: center
+}
+
+.headline p {
+    color: #1a4f7a;
+    font-size: 24px;
+    width: 45%;
+    white-space: pre-line;
+}
+
+#hero_img {
+    width: 400px;
+}
+
+
+#hero_para {
+    margin-right: 8%
+}
+
+#hero_button {
+
     background-color: #FF8C69; /* Salmon color */
     color: white;
     padding: 20px 20px;
@@ -36,23 +61,15 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.modern-button:hover {
+#hero_button:hover {
     background-color: #40E0D0; /* Turquoise color on hover */
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
     transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* Optional: focus effect for accessibility */
-.modern-button:focus {
+#hero_button:focus {
     outline: none;
     box-shadow: 0 0 0 2px #000080; /* Navy color outline */
-}
-
-.headline p {
-    color: #1a4f7a;
-    font-size: 24px;
-    width: 40%;
-    white-space: pre-line;
 }
 
 .highlight {
@@ -112,13 +129,6 @@
 .content_pair {
     display: flex;
     flex-direction: column; /* This stacks children vertically */
-    align-items: center; /* This centers them horizontally */
-    justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
-}
-
-.header_pair {
-    position: relative;
-    display: flex;
     align-items: center; /* This centers them horizontally */
     justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
 }

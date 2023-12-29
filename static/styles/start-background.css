@@ -37,6 +37,7 @@
 
 #word2 {
     text-align: right;
+    margin: 0;
     margin-right: 7rem;
     font-weight: bold; /* Optional: makes the text thicker */
     background: linear-gradient(to right, white, #1a4f7a, #ff8a71);
