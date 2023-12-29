@@ -1,0 +1,15 @@
+
+ .contact-background {
+    position: relative;
+    background-color: rgb(249, 247, 247);
+    color: #4db6ac;
+    padding: 50px 0;
+    overflow: hidden;
+    width: 100%;
+    border-top: 0.5em solid #4682B4; /* Modern pastel navy color */
+}
+
+.contact-background h1 {
+    color: #4682B4;
+    white-space: pre-line;
+}

@@ -10,29 +10,82 @@
 }
 
 .about-background p {
-    width: 70%;
     font-size: 1.4em; /* Increase font size for modern look */
     line-height: 1.6; /* Improve readability */
-    margin: 0 auto;
     white-space: pre-line;
     position: relative;
     z-index: 2;
+    margin: 0;
 }
 
-.about-background > span {
-    display: flex;
+.about-container {
+    border: 2px solid #56A8A2; /* Modern pastel turquoise border */
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 20px; /* Slightly rounded corners */
+    background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.3) 0%, rgba(164, 192, 229, 0.3) 33%, rgba(250, 128, 114, 0.3) 33%, rgba(250, 128, 114, 0.3) 66%, rgba(86, 168, 162, 0.3) 66%, rgba(86, 168, 162, 0.3) 100%); /* Subtle pastel navy, salmon, and turquoise */
+    color: #333; /* Dark grey for text */
+    max-width: 60%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 1% auto;
+}
+
+
+.floating-title {
+    position: relative;
+    font-size: 2.5em;
+    color: rgb(249, 247, 247); /* Turquoise color for text */
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.8), rgba(250, 128, 114, 0.8), rgba(86, 168, 162, 0.8)); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: inline-block;
+    animation: float 4s ease-in-out infinite, pulse 2s infinite alternate;
+    margin: 0;
+    margin-top: 27px;
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
+    100% { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); }
+}
+
+.floating-title::before {
+    content: '';
     position: absolute;
-    top: 70px;
+    top: 50%;
+    left: 50%;
     width: 100%;
-    z-index: 1; /* Lower z-index */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: inherit;
+    z-index: -1;
+    transform: scale(1.05) translate(-50%, -50%);
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
 
-.about-background > span > span {
-    width: 100%;
-    height: 500px;
-    opacity: 0.85;
+.floating-title:hover::before {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1) translate(-50%, -50%);
 }
 
-.about-background > span > div:nth-child(1) { background-color: salmon; }
-.about-background > span > div:nth-child(2) { background-color: #30d5c8; }
-.about-background > span > div:nth-child(3) { background-color: #1a4f7a; }
+.floating-title:hover {
+    transform: scale(1.03);
+}
+
+.background-image {
+    background-image: url('/static/backgrounds/about_test.png');
+    background-size: cover;  /* Cover the entire area of the element */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    height: 100vh;  /* Example height, can be adjusted */
+}
