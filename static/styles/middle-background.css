@@ -10,7 +10,8 @@
 }
 
 .middle-background h1 {
-    width: 55%;
+    line-height: 1.3;
+    width: 63%;
     font-size: 52px;
     position: relative;
     z-index: 5;
@@ -47,7 +48,7 @@
     line-height: 1.6; /* Improved line spacing for better readability */
     margin-right: 11%;
     margin-top: 0%;
-    width: 45%;
+    width: 43%;
     white-space: pre-line;
 }
 
@@ -134,13 +135,6 @@
 
 .content_box div {
     width: 60%;
-}
-
-.content_pair {
-    display: flex;
-    flex-direction: column; /* This stacks children vertically */
-    align-items: center; /* This centers them horizontally */
-    justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
 }
 
 .sub_text {

@@ -23,3 +23,10 @@ i {vertical-align: middle}
     animation: pulsate 7s ease-in-out infinite;
     background-size: 200% 100%;
 }
+
+.content_pair {
+    display: flex;
+    flex-direction: column; /* This stacks children vertically */
+    align-items: center; /* This centers them horizontally */
+    justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
+}

@@ -1,6 +1,7 @@
 
 .end-background {
     margin: 0;
+    margin-top: -1%;
     padding-top: 70px;
     position: relative;
     background: linear-gradient(135deg, #009688, #4db6ac);
@@ -9,7 +10,11 @@
     z-index: -1;
 }
 
-.end-background p {
-    width: 50%;
+.end-background h1 {
+    font-size: 3rem;
 }
 
+.footnote {
+    width: 90%;
+    font-size: 12px;
+}
