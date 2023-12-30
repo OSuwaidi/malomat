@@ -2,6 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     height: 100%; /* Ensure the full height of the page is covered */
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
@@ -29,4 +30,13 @@ i {vertical-align: middle}
     flex-direction: column; /* This stacks children vertically */
     align-items: center; /* This centers them horizontally */
     justify-content: center; /* This centers them vertically, if the container is taller than the combined height of the items */
+}
+
+.special {
+  background-image: linear-gradient(45deg, #DE5D5D, #BF5748);
+  background-clip: text;
+  color: transparent;
+  display: inline;
+  padding: 2px;
+  font-weight: bold;
 }
