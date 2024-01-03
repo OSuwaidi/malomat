@@ -1,7 +1,7 @@
 
 .about-background {
     margin: 0;
-    padding-top: 70px;
+    padding: 70px 0;
     position: relative;
     background: linear-gradient(135deg, #009688, white);
     min-height: 100vh;
@@ -10,7 +10,7 @@
 }
 
 .about-background p {
-    font-size: 1.4em; /* Increase font size for modern look */
+    font-size: 1.45vw; /* Increase font size for modern look */
     line-height: 1.6; /* Improve readability */
     white-space: pre-line;
     position: relative;
@@ -20,12 +20,12 @@
 
 .about-container {
     border: 2px solid #56A8A2; /* Modern pastel turquoise border */
-    padding: 20px;
+    padding: 7%;
     padding-top: 0;
     border-radius: 20px; /* Slightly rounded corners */
     background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.3) 0%, rgba(164, 192, 229, 0.3) 33%, rgba(250, 128, 114, 0.3) 33%, rgba(250, 128, 114, 0.3) 66%, rgba(86, 168, 162, 0.3) 66%, rgba(86, 168, 162, 0.3) 100%); /* Subtle pastel navy, salmon, and turquoise */
     color: #333; /* Dark grey for text */
-    max-width: 60%;
+    max-width: 70%;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin: 1% auto;
 }
@@ -33,7 +33,7 @@
 
 .about-background h1 {
     position: relative;
-    font-size: 2.5em;
+    font-size: 2.7vw;
     color: rgb(249, 247, 247); /* Turquoise color for text */
     text-align: center;
     font-weight: bold;

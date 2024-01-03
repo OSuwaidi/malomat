@@ -13,16 +13,27 @@
     height: 300px;
     top: 55%;
     left: 15%;
-    background: radial-gradient(circle at 40% 30%, #1a4f7a 0%, #1a4f7a 60%, transparent 60%);
+    background: radial-gradient(circle at 40% 30%, rgb(125, 200, 245) 0%, rgb(125, 200, 245) 60%, transparent 60%);
+    border-radius: 50% 90% 40% 40% / 50% 50% 60% 65%;
 }
 
 .blob-2 {
     width: 250px;
-    height: 250px;
+    height: 270px;
     bottom: 50%;
     right: 50%;
     background: radial-gradient(circle at 40% 30%, #ff8a71 0%, #ff8a71 60%, transparent 60%);
 }
+
+.blob-3 {
+    width: 300px;
+    height: 250px;
+    bottom: 55%;
+    left: 75%;
+    background: radial-gradient(circle at 40% 30%, #1a4f7a 0%, #1a4f7a 60%, transparent 60%);
+    border-radius: 45% 55% 60% 40% / 40% 60% 35% 65%;
+}
+
 
 @keyframes float {
     0%, 100% {

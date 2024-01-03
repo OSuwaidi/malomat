@@ -15,7 +15,7 @@
     width: 300px;
     height: 300px;
     background-color: #80cbc4;
-    top: 10%;
+    top: 15%;
     left: 5%;
     animation-duration: 7s;
 }
@@ -24,7 +24,7 @@
     width: 200px;
     height: 200px;
     background-color: #4dd0e1;
-    bottom: 20%;
+    bottom: 15%;
     right: 10%;
     animation-duration: 6s;
 }

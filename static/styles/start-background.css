@@ -126,7 +126,7 @@
 #scroll-down-arrow {
     position: absolute;
     bottom: 17px;
-    color: rgb(235, 240, 220); /* Customizable color */
+    color: rgb(220, 230, 200); /* Customizable color */
     text-decoration: none;
     cursor: pointer;
     animation: bounce 2s infinite;
@@ -139,7 +139,6 @@
     /* Hover effect for interactivity */
     &:hover {
         color: rgb(255, 255, 255); /* Change color on hover for feedback */
-        transform: scale(1.1); /* Slightly enlarges the arrow on hover */
         opacity: 1; /* Full opacity on hover */
     }
 }
