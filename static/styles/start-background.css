@@ -6,7 +6,6 @@
     background: linear-gradient(135deg, #009688, #4db6ac);
     min-height: 90vh;
     width:100%;
-    z-index: -1;
     opacity: 0.97;
 }
 
