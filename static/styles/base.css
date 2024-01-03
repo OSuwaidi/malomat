@@ -13,7 +13,7 @@ body {
     background-color: rgb(249, 247, 247);
 }
 
-i {vertical-align: middle}
+i {vertical-align: middle; font-size: 2vw !important;}
 
 .malomat {
     font-size: 25px;

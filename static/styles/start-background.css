@@ -30,52 +30,77 @@
     }
 }
 
-h2 {
+#start-background h2 {
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    width: 70%;
     color: #ffffff; /* Bright text color for contrast */
-    font-size: 2.5rem; /* Proportional size */
+    font-size: 2.6vw; /* Proportional size */
     text-align: center; /* Center-aligned */
     letter-spacing: 0.1em; /* Wider letter spacing for a refined look */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
     overflow: hidden; /* Ensures no spillover */
     position: relative; /* Set position for pseudo-elements */
-    animation: floatWave 4s ease-in-out infinite; /* Smooth floating effect */
-    animation: swooshIn 1.5s ease-out forwards; /* Apply the swooshIn animation */
-}
+    background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.8), rgba(250, 128, 114, 0.8), rgba(86, 168, 162, 0.8)); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    animation: swooshIn 1.5s ease-out forwards, pulse 2s infinite alternate;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 
-h2::before, h2::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 15px;
-    background: linear-gradient(145deg, transparent, rgba(255, 255, 255, 0.3));
-    z-index: -1;
-    transition: opacity 0.3s ease;
-}
+    /* Adding a 3D perspective effect */
+    perspective: 1500px;
+    transform: perspective(600px) rotateY(10deg);
 
-h2:hover::before {
-    opacity: 0; /* Disappear on hover for a dynamic effect */
-}
+    /* Adding a subtle text shadow for depth */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 
-h2:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+    /* Pseudo-element for added visual flair */
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+        animation: shimmer 2s infinite;
+        border-radius: 10px;
+    }
 }
 
 @keyframes swooshIn {
     from {
-        opacity: 0;
-        transform: translateX(-100px);
+        opacity: 0.1;
+        transform: translateX(-10%) rotateY(-10deg);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0) rotateY(0deg);
     }
 }
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Additional animation for a pulsing effect */
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
 
 #word1 {
     text-align: left;
@@ -98,14 +123,25 @@ h2:hover {
     }
 }
 
-.scroll-down-arrow {
+#scroll-down-arrow {
     position: absolute;
-    bottom: 20px;
-    font-size: 30px;
-    color: #333; /* Change as needed */
+    bottom: 17px;
+    color: rgb(235, 240, 220); /* Customizable color */
     text-decoration: none;
     cursor: pointer;
     animation: bounce 2s infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    /* Modernizing the appearance */
+=    opacity: 0.8; /* Slightly transparent for a softer look */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+
+    /* Hover effect for interactivity */
+    &:hover {
+        color: rgb(255, 255, 255); /* Change color on hover for feedback */
+        transform: scale(1.1); /* Slightly enlarges the arrow on hover */
+        opacity: 1; /* Full opacity on hover */
+    }
 }
 
 @keyframes bounce {
@@ -117,5 +153,17 @@ h2:hover {
     }
     60% {
         transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-1vw);
+    }
+    60% {
+        transform: translateY(-0.7vw);
     }
 }

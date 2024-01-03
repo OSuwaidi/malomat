@@ -13,7 +13,7 @@
 
 .ai-navbar img {
     float: left;
-    height: 70px;
+    height: 4.7vw;
     width: auto;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 7%;
+    margin-right: 5%;
     margin-top: 25px;
 }
 
@@ -45,7 +45,7 @@
 .ai-navbar a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 1.1vw;
     font-weight: bold;
     transition: color 0.3s ease;
 }
