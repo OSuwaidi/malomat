@@ -18,6 +18,12 @@
     margin: 0;
     padding: 0;
     margin-left: 7%;
+    opacity: 1; /* Default opacity */
+    transition: opacity 0.3s ease;
+}
+
+.ai-navbar img:hover {
+    opacity: 0.6; /* Reduced opacity on hover */
 }
 
 .ai-navbar ul {
