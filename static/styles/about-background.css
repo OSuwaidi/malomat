@@ -10,8 +10,9 @@
 }
 
 .about-background p {
+    text-align: left;
     font-size: 1.45vw; /* Increase font size for modern look */
-    line-height: 1.6; /* Improve readability */
+    line-height: 2; /* Improve readability */
     white-space: pre-line;
     position: relative;
     z-index: 2;
@@ -20,8 +21,8 @@
 
 .about-container {
     border: 2px solid #56A8A2; /* Modern pastel turquoise border */
-    padding: 7%;
-    padding-top: 0;
+    padding: 5%;
+    padding-top: 1%;
     border-radius: 20px; /* Slightly rounded corners */
     background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.3) 0%, rgba(164, 192, 229, 0.3) 33%, rgba(250, 128, 114, 0.3) 33%, rgba(250, 128, 114, 0.3) 66%, rgba(86, 168, 162, 0.3) 66%, rgba(86, 168, 162, 0.3) 100%); /* Subtle pastel navy, salmon, and turquoise */
     color: #333; /* Dark grey for text */
@@ -33,11 +34,11 @@
 
 .about-background h1 {
     position: relative;
+    top: 1vw;
     font-size: 2.7vw;
     color: rgb(249, 247, 247); /* Turquoise color for text */
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 2px;
     background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.8), rgba(250, 128, 114, 0.8), rgba(86, 168, 162, 0.8)); /* Gradient background */
     border-radius: 10px;
@@ -45,8 +46,7 @@
     padding: 20px;
     display: inline-block;
     animation: float 4s ease-in-out infinite, pulse 2s infinite alternate;
-    margin: 0;
-    margin-top: 30px;
+    margin: 20px 0;
     transition: transform 0.3s ease-in-out;
 }
 

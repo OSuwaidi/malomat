@@ -34,27 +34,19 @@
     margin: 0;
     padding: 20px;
     width: 70%;
-    color: #ffffff; /* Bright text color for contrast */
-    font-size: 2.6vw; /* Proportional size */
-    text-align: center; /* Center-aligned */
-    letter-spacing: 0.1em; /* Wider letter spacing for a refined look */
-    overflow: hidden; /* Ensures no spillover */
-    position: relative; /* Set position for pseudo-elements */
-    background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.8), rgba(250, 128, 114, 0.8), rgba(86, 168, 162, 0.8)); /* Gradient background */
+    color: #ffffff;
+    font-size: 2.6vw;
+    text-align: center;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(164, 192, 229, 0.6), rgba(250, 128, 114, 0.6), rgba(86, 168, 162, 0.6));
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
-    animation: swooshIn 1.5s ease-out forwards, pulse 2s infinite alternate;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
-    /* Adding a 3D perspective effect */
-    perspective: 1500px;
-    transform: perspective(600px) rotateY(10deg);
-
-    /* Adding a subtle text shadow for depth */
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-
-    /* Pseudo-element for added visual flair */
     &:before {
         content: '';
         position: absolute;
@@ -63,32 +55,14 @@
         width: 100%;
         height: 100%;
         background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
-        animation: shimmer 2s infinite;
+        animation: shimmer 3s infinite linear;
         border-radius: 10px;
     }
 }
 
-@keyframes swooshIn {
-    from {
-        opacity: 0.1;
-        transform: translateX(-10%) rotateY(-10deg);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0) rotateY(0deg);
-    }
-}
-
 @keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
 
 /* Additional animation for a pulsing effect */
@@ -133,7 +107,7 @@
     transition: transform 0.3s ease, color 0.3s ease;
 
     /* Modernizing the appearance */
-=    opacity: 0.8; /* Slightly transparent for a softer look */
+    opacity: 0.8; /* Slightly transparent for a softer look */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
 
     /* Hover effect for interactivity */
