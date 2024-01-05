@@ -1,15 +1,15 @@
 # بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وبه نستعين
 
-from flask import Flask, request, render_template, redirect, url_for, session
-from app_secrets import our_secret
+from flask import Flask, render_template
 from datetime import timedelta
 import numpy as np
+import os
 
 # Initialize app:
 app = Flask(__name__, static_url_path='/static')
 
 # App config:
-app.secret_key = our_secret
+app.secret_key = os.environ.get('OUR_SECRET', 'default_secret_key')
 app.permanent_session_lifetime = timedelta(minutes=30)
 
 
