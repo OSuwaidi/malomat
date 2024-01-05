@@ -30,4 +30,5 @@ def contact():
     return "contact us"
 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
