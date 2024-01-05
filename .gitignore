@@ -92,7 +92,6 @@ ipython_config.py
 #   intended to run in multiple environments; otherwise, check them in:
 # .python-version
 py3/
-requirements.txt
 *.ini
 *.json
 .DS_Store
